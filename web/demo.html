@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <style>
-  body { background-image: url("kao.jpg"); background-repeat: no-repeat; }
+  <style><!--
+  .parts { position: relativ; z-index: 2; }
+  .scrt { position: absolute; top:100px; z-index: 3; }
+  .kao { position: absolute; top:100px; z-index: 1; }
+  -->
   </style>
   <script>
   $(function() {
@@ -16,14 +19,27 @@
     $( "#draggable3" ).draggable();
     $( "#draggable4" ).draggable();
   });
+
+  $(function() {
+    $('button').click(function(){
+    $('#secret').hide();
+    });
+  });
+
   </script>
 </head>
 <body>
+<p>
+<img id="draggable1" class="parts" src="/kuti.gif">
+<img id="draggable2" class="parts" src="/me.gif">
+<img id="draggable3" class="parts" src="/me.gif">
+<img id="draggable4" class="parts" src="/hana.gif">
+</p>
 
-<img id="draggable1" src="/kuti.gif">
-<img id="draggable2" src="/me.gif">
-<img id="draggable3" src="/me.gif">
-<img id="draggable4" src="/hana.gif">
+<div><img id="kao1" class="kao" src="/kao-1.jpg"></div>
+<div><img id="secret" class="scrt" src="/secret.jpg"></div>
+<button>Show!!</button>
+
 
 </body>
 </html>
