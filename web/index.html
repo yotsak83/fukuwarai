@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>fukuwarai2016</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <style><!--
+  .box { float:left;}
+  .parts-box { float:right; height:300:px; width:500px; }
+  .parts { position: relative; z-index: 2; }
+  .scrt { position: absolute; top:50px; left:10px; z-index: 3; }
+  .kao { position: absolute; top:50px;  left:10px; z-index: 1; }
+  -->
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable1" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+    $( "#draggable4" ).draggable();
+    $( "#draggable5" ).draggable();
+    $( "#draggable6" ).draggable();
+    $( "#draggable7" ).draggable();
+    $( "#draggable8" ).draggable();
+    $( "#draggable9" ).draggable();
+    $( "#draggable10" ).draggable();
+    $( "#draggable11" ).draggable();
+    $( "#draggable12" ).draggable();
+    $( "#draggable13" ).draggable();
+    $( "#draggable14" ).draggable();
+    $( "#draggable15" ).draggable();
+    $( "#draggable16" ).draggable();
+    $( "#draggable17" ).draggable();
+    $( "#draggable18" ).draggable();
+    $( "#draggable19" ).draggable();
+    $( "#draggable20" ).draggable();
+    $( "#draggable21" ).draggable();
+  });
+
+  $(function() {
+    $('#show').click(function(){
+    $('#secret').hide();
+    });
+  });
+
+  $(function() {
+    $('#retry').click(function(){
+    location.reload();
+    });
+  });
+
+
+  </script>
+</head>
+<body>
+  <div>
+    <button id="show">Show!!</button>
+    <button id="retry">Retry</button>
+  </div>
+
+  <div class="box"><img class="kao" src="/kao.jpg"></div>
+  <div class="box"><img id="secret" class="scrt" src="/secret.jpg"></div>
+
+  <div class="parts-box">
+    <img id="draggable1" class="parts" src="/kuti1.gif">
+    <img id="draggable2" class="parts" src="/kuti2.gif">
+    <img id="draggable3" class="parts" src="/kuti3.gif">
+    <img id="draggable4" class="parts" src="/kuti4.gif">
+    <img id="draggable5" class="parts" src="/mayu1.gif">
+    <img id="draggable6" class="parts" src="/mayu2.gif">
+    <img id="draggable7" class="parts" src="/mayu3.gif">
+    <img id="draggable8" class="parts" src="/mayu4.gif">
+    <img id="draggable9" class="parts" src="/eye1.gif">
+    <img id="draggable10" class="parts" src="/eye1.gif">
+    <img id="draggable11" class="parts" src="/eye2.gif">
+    <img id="draggable12" class="parts" src="/eye3.gif">
+    <img id="draggable14" class="parts" src="/eye4.gif">
+    <img id="draggable15" class="parts" src="/eye5.gif">
+    <img id="draggable16" class="parts" src="/eye6.gif">
+    <img id="draggable17" class="parts" src="/eye6.gif">
+    <img id="draggable18" class="parts" src="/hana.gif">
+    <img id="draggable19" class="parts" src="/hana2.gif">
+    <img id="draggable20" class="parts" src="/hana3.gif">
+    <img id="draggable21" class="parts" src="/hana4.gif">
+  </div>
+</body>
+</html>
